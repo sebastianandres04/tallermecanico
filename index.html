@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERAL MECHANIC - Taller Mecánico Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GENERAL MECHANIC</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>GENERAL MECHANIC</h1>
+            <p>Expertos en mantenimiento y reparación de vehículos</p>
+            <a href="#contacto" class="cta-button">Agenda tu cita</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card" id="servicio-mecanica">
+                <i class="fas fa-car"></i>
+                <h3>Mecánica General</h3>
+                <p>Diagnóstico y reparación de problemas mecánicos</p>
+            </div>
+            <div class="service-card" id="servicio-aceite">
+                <i class="fas fa-oil-can"></i>
+                <h3>Cambio de Aceite</h3>
+                <p>Mantenimiento preventivo y cambio de fluidos</p>
+            </div>
+            <div class="service-card" id="servicio-reparaciones">
+                <i class="fas fa-tools"></i>
+                <h3>Reparaciones</h3>
+                <p>Soluciones para todo tipo de averías</p>
+            </div>
+            <div class="service-card" id="servicio-diagnostico">
+                <i class="fas fa-car-battery"></i>
+                <h3>Diagnóstico Electrónico</h3>
+                <p>Análisis computarizado de sistemas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="about-content">
+            <h2>Sobre Nosotros</h2>
+            <p>Con más de 10 años de experiencia, GENERAL MECHANIC Taller Mecánico se ha consolidado como un referente en el sector automotriz. Nuestro equipo de técnicos altamente calificados está comprometido con brindar el mejor servicio a nuestros clientes.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Garantía en todos nuestros servicios</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Precios competitivos</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Atención personalizada</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery">
+        <h2>Galería de Trabajos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="imagenes/tallermoderno.jpg" alt="Taller mecánico moderno">
+                <div class="gallery-overlay"><span>Taller moderno</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/reparacion.jpg" alt="Reparación de motor">
+                <div class="gallery-overlay"><span>Reparación de motor</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/diagnosis.jpg" alt="Diagnóstico computarizado">
+                <div class="gallery-overlay"><span>Diagnóstico computarizado</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/preventivo.jpg" alt="Mantenimiento preventivo">
+                <div class="gallery-overlay"><span>Mantenimiento preventivo</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/aceite.jpg" alt="Cambio de aceite">
+                <div class="gallery-overlay"><span>Cambio de aceite</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/frenos.jpg" alt="Reparación de frenos">
+                <div class="gallery-overlay"><span>Reparación de frenos</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Dirección: Vicuña Mackena #1050</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Teléfono: (+56) 90929430</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: contacto@generalmechanic.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Horario: Lunes a Viernes 8:00 - 18:00</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Nombre" name="Nombre" required>
+                <input type="email" placeholder="Email" name="Email" required>
+                <div style="display: flex; align-items: center;">
+                    <span style="margin-right: 8px; font-weight: bold;">+56 9</span>
+                    <input type="tel" placeholder="12345678" name="Telefono" required style="flex: 1;">
+                </div>
+                <textarea placeholder="Mensaje" name="Mensaje" required></textarea>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>General Mechanic</h3>
+                <p>Tu confianza es nuestra prioridad</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 General mechanic. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
